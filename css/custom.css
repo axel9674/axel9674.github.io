@@ -1,0 +1,362 @@
+/**
+* Author: Alessio Bollo
+*
+* This Stylesheet is for the styling of the page
+*
+*/
+
+/* Mobile */
+
+/* Global settings */
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("./../res/fonts/Gilroy-ExtraBold.otf");
+}
+
+@font-face {
+    font-family: "Mont";
+    src: url("./../res/fonts/MontDemo-Heavy.otf");
+}
+
+:root {
+    --primary: #8A42DC;
+    --primary-dark: #7C2BCE;
+    /*--white: #dfddec;*/
+    --white: #f8f8f8;
+    --black: #1c1b20;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+section {
+    min-height: 95vh;
+}
+
+.title {
+    font-size: 2rem;
+    font-family: Gilroy;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--primary-dark);
+    transition: all 0.2s;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.box {
+    align-self: start;
+    padding-bottom: 50px;
+    background-color: #ffffff00;
+}
+
+.box h2 {
+    font-family: Gilroy;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
+.black {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+    text-align: center;
+}
+
+ul li {
+    margin: 0;
+}
+
+.icon {
+    height: 7px;
+    margin-bottom: 0;
+}
+
+.box figure .icon {
+    height: 12px;
+}
+
+h3 {
+    margin-bottom: 50px;
+    font-size: 1.3rem;
+    font-family: Gilroy;
+}
+
+h3 span.italic {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+h3 span.highlight {
+    color: var(--primary);
+}
+
+/* Navbar section */
+
+.navbar {
+    border-top: 2px solid var(--primary);
+    background-color: #ffffff00 !important;
+}
+
+/* Hero section */
+.hero  {
+    margin-top: -51px;
+    background-color: var(--white);
+}
+
+.hero div.container {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero div.container .hero-content h1.hero-title {
+    font-size: 1.8rem;
+}
+
+.hero div.container .hero-content div.hero-text {
+    font-size: 1.1rem;
+}
+
+.strike {
+  position: relative;
+}
+.strike::after {
+  border-bottom: 0.125em solid;
+  content: "";
+  left: 0;
+  margin-top: calc(0.125em / 10 * -1);
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+/* About section */
+.about {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 50px 0;
+}
+
+.about div.container {
+    padding: 0 35px;
+}
+
+/* Skills section */
+
+.skills {
+    background-color: var(--white);
+}
+
+.skills .container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "stitle"
+        "sskills";
+    padding: 50px 0;
+}
+
+.stitle {
+    grid-area: stitle;
+    padding: 0 35px;
+}
+
+.stitle .box .about-title {
+    color: var(--primary);
+}
+
+.sskills {
+    grid-area: sskills;
+    padding: 35px;
+}
+
+.sskills .skill h3 {
+    font-size: 0.9rem;
+}
+
+.sskills .skill p {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+/* Projects section */
+.projects {
+    background-color: #ffffff00;
+    padding: 50px 0;
+}
+
+.projects .projects-content {
+    padding: 0 35px;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "pbox"
+        "ptitle"
+        "pcont";
+}
+
+.pbox {
+    grid-area: pbox;
+}
+
+.projects .projects-content .ptitle {
+    grid-area: ptitle;
+}
+
+.projects .projects-content .ptitle .skills-text {
+    margin-bottom: 50px;
+}
+
+.projects .pcont {
+    grid-area: pcont;
+    padding: 0;
+}
+
+.projects .pcont .project {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "project-image"
+        "project-desc";
+}
+
+.projects .pcont .project .project-image {
+    grid-area: project-image;
+}
+
+.projects .pcont .project .project-desc {
+    grid-area: project-desc;
+    text-align: right;
+}
+
+.projects .pcont .project .project-desc .project-title {
+    margin: 20px 0 10px;
+    font-size: 0.9rem;
+    font-family: Gilroy;
+}
+
+.projects .pcont .project .project-desc .project-title span {
+    margin: 20px 0 10px;
+    font-size: 0.7rem;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.projects .pcont .project .project-desc .project-link {
+    font-size: 0.9rem;
+    color: var(--black);
+    font-family: 'Libre Baskerville', serif; 
+}
+
+/* Footer section */
+.footer {
+    background-color: var(--black);
+    min-height: 95vh;
+    padding: 50px 20px;
+}
+
+.footer .container {
+    color: var(--white);
+}
+
+.footer .container .social .social-link,
+.footer .container .contacts .social-link {
+    text-decoration: none;
+}
+
+.footer .container .social .social-link:hover, 
+.footer .container .contacts .social-link:hover {
+    text-decoration: underline;
+}
+
+.footer h5 i {
+    font-size: 0.7rem;
+    vertical-align: top;
+}
+
+/* Desktop */
+@media screen and (min-width: 960px) {
+
+    /* Global settings */
+    .box h2 {
+        font-size: 6rem;
+        line-height: 5.5rem;
+    }
+
+    /* Hero section */
+    .hero div.container .hero-content h1.hero-title {
+        font-size: 3rem;
+    }
+
+    .hero div.container .hero-content div.hero-text {
+        font-size: 1.5rem;
+    }
+
+    /* Skills section */
+    .skills .container {
+        grid-template-rows: auto;
+        grid-template-columns: 40% auto;
+        grid-template-areas:
+            "stitle sskills";
+        padding: 50px 0;
+    }
+
+    .sskills {
+        align-self: center;
+        justify-self: end;
+        padding: 50px;
+    }
+
+    /* Projects section */
+    .projects .projects-content {
+        grid-auto-rows: auto;
+        grid-template-columns: auto 40%;
+        grid-template-areas:
+            "pbox ."
+            "pcont ptitle"
+            "pcont ptitle";
+    }
+
+    .pcont {
+        align-self: center;
+        justify-self: start;
+        border-right: 1px solid #d4d4d4;
+    }
+
+    .ptitle {
+        padding: 50px;
+    }
+
+    /* Footer section */
+    .footer {
+        min-height: 60vh;
+    }
+
+}

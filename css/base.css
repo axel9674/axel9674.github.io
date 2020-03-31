@@ -1,0 +1,160 @@
+/**
+* Author: Alessio Bollo
+*
+* This Stylesheet is the skeleton of the page, no styling
+*
+*/
+
+/* Mobile */
+
+.main-grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "navbar"
+    "hero"
+    "about"
+    "skills"
+    "projects"
+    "footer";
+}
+
+/* Navbar section */
+.navbar {
+  grid-area: navbar;
+  width: 100%;
+  z-index: 10;
+}
+
+nav.navbar div.container {
+  justify-content: center;
+}
+
+/* Hero section */
+.hero {
+  grid-area: hero;
+  width: 100%;
+  
+
+  background-color: #ccc;
+}
+
+/* About section */
+.about {
+  grid-area: about;
+  width: 100%;
+
+  background-color: #000;
+}
+
+/* Skills section */
+.skills {
+  grid-area: skills;
+  width: 100%;
+
+  background-color: #888;
+}
+
+.box {
+  background-color: #fff;
+}
+
+.column {
+  padding: 50px 30px;
+  border-bottom: 1px solid #E6ECF8;
+  border-right: 0px solid #E6ECF8;
+}
+
+.columns .column:last-child {
+  border: 0;
+}
+
+/* Projects section */
+.projects {
+  grid-area: projects;
+  width: 100%;
+
+  background-color: #555;
+}
+
+.projects-content {
+  flex-direction: column;
+}
+
+.project {
+  min-height: 200px;
+  padding: 10px 5px;
+}
+
+.projects-content .project figure img {
+  width: 100%;
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+.projects-content .project figure figcaption.opaque-color {
+  text-align: center;
+  display: block;
+  float: left;
+  position: absolute;
+  top: 0;
+  padding: 40px 10px;
+  min-height: 200px;
+  width: 100%;
+  height: 100%;
+  
+  transition: all 0.3s;
+
+  visibility: hidden;
+  background-color: rgb(142, 0, 224, 0);
+}
+
+.projects-content .project figure {
+  position: relative;
+  border-radius: 12px;
+  margin: 0;
+}
+
+.projects-content .project:hover figure img {
+  transform: scale(1.2);
+}
+
+.projects-content .project:hover figure figcaption.opaque-color {
+  visibility: visible;
+  background-color: #8e00e099;
+}
+
+.projects-content .project figure figcaption.opaque-color button {
+  margin-top: 20px;
+}
+
+/* Footer section */
+.footer {
+  grid-area: footer;
+  width: 100%;
+
+  background-color: #333;
+}
+
+/* Desktop */
+@media screen and (min-width: 960px) {
+
+  /* Navbar section */
+  nav.navbar div.container {
+    justify-content: start;
+  }
+
+  /* Skills section */
+  .column {
+    padding: 50px 30px;
+    border-bottom: 0px solid #E6ECF8;
+    border-right: 1px solid #E6ECF8;
+  }
+
+  /* Projects section */
+  .projects-content {
+    flex-direction: row;
+  }
+
+}

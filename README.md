@@ -1,2 +1,2 @@
-# axel9674.github.io
-Personal website
+# Portfolio
+This is my personal portfolio project
