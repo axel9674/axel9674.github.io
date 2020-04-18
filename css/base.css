@@ -27,7 +27,7 @@
   z-index: 10;
 }
 
-nav.navbar div.container {
+.navbar .container {
   justify-content: center;
 }
 
@@ -63,7 +63,7 @@ nav.navbar div.container {
 .column {
   padding: 50px 30px;
   border-bottom: 1px solid #E6ECF8;
-  border-right: 0px solid #E6ECF8;
+  border-right: 0 solid #E6ECF8;
 }
 
 .columns .column:last-child {
@@ -107,7 +107,7 @@ nav.navbar div.container {
   transition: all 0.3s;
 
   visibility: hidden;
-  background-color: rgb(142, 0, 224, 0);
+  background-color: rgba(142, 0, 224, 0);
 }
 
 .projects-content .project figure {
@@ -148,7 +148,7 @@ nav.navbar div.container {
   /* Skills section */
   .column {
     padding: 50px 30px;
-    border-bottom: 0px solid #E6ECF8;
+    border-bottom: 0 solid #E6ECF8;
     border-right: 1px solid #E6ECF8;
   }
 
