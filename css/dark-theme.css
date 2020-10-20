@@ -1,0 +1,35 @@
+body.dark-mode {
+    background-color: var(--black);
+    transition: all 0.2s linear;
+}
+
+body.dark-mode,
+body.dark-mode .hero,
+body.dark-mode .skills,
+body.dark-mode .projects {
+    color: var(--white);
+}
+
+body.dark-mode .bgi {
+    background-image: url("./../res/imgs/marble-black-small.jpg");
+}
+
+body.dark-mode .navbar a {
+    color: var(--white);
+}
+
+body.dark-mode .hero-text .text-muted {
+    color: var(--white) !important;
+}
+
+body.dark-mode #btn-dark-mode > span:after {
+    content: "light";
+}
+
+body.dark-mode nav.navbar .navbar-brand > img {
+    content: url("./../res/logo/logo-white.svg");
+}
+
+body.dark-mode .projects > .projects-content > .pbox > figure > img {
+    content: url("./../res/icons/Line_white.svg");
+}

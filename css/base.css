@@ -9,7 +9,7 @@
 
 .main-grid {
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: auto;
   grid-template-columns: auto;
   grid-template-areas:
     "navbar"
@@ -35,29 +35,18 @@
 .hero {
   grid-area: hero;
   width: 100%;
-  
-
-  background-color: #ccc;
 }
 
 /* About section */
 .about {
   grid-area: about;
   width: 100%;
-
-  background-color: #000;
 }
 
 /* Skills section */
 .skills {
   grid-area: skills;
   width: 100%;
-
-  background-color: #888;
-}
-
-.box {
-  background-color: #fff;
 }
 
 .column {
@@ -74,8 +63,6 @@
 .projects {
   grid-area: projects;
   width: 100%;
-
-  background-color: #555;
 }
 
 .projects-content {
@@ -133,8 +120,6 @@
 .footer {
   grid-area: footer;
   width: 100%;
-
-  background-color: #333;
 }
 
 /* Desktop */
