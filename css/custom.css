@@ -263,7 +263,7 @@ body .projects {
 
 .skills {
     /* background-color: var(--white); */
-    padding: var(--big-gap) 0
+    padding: var(--big-gap) 0;
 }
 
 .skills .container {
@@ -291,10 +291,10 @@ body .projects {
     grid-template-rows: auto;
     grid-template-columns: auto;
     grid-template-areas:
-        "frontend"
         "backend"
-        "digitalandmobile"
-        "design";
+        "frontend"
+        "devops"
+        "digitalandmobile";
     padding: var(--medium-gap);
     gap: var(--medium-gap);
     background-color: var(--black);
@@ -322,8 +322,8 @@ body .projects {
     grid-area: digitalandmobile;
 }
 
-#design {
-    grid-area: design;
+#devops {
+    grid-area: devops;
 }
 
 /* Projects section */
@@ -332,36 +332,30 @@ body .projects {
     padding: var(--big-gap) 0;
 }
 
-.projects .projects-content {
-    padding: 0 var(--medium-gap);
+.projects .container {
+    padding: 0 var(--big-gap);
     display: grid;
     grid-auto-rows: auto;
     grid-template-columns: auto;
     grid-template-areas:
-        "pbox"
         "ptitle"
         "pcont";
 }
 
-.pbox {
-    grid-area: pbox;
-}
-
-.projects > .projects-content > .pbox > figure > img {
+.projects > .pbox > figure > img {
     content: url("./../res/icons/Line_black.svg");
 }
 
-.projects .projects-content .ptitle {
+.projects .ptitle {
     grid-area: ptitle;
 }
 
-.projects .projects-content .ptitle .skills-text {
+.projects .ptitle .skills-text {
     margin-bottom: var(--big-gap);
 }
 
 .projects .pcont {
     grid-area: pcont;
-    padding: 0;
 }
 
 .projects .pcont .project {
@@ -371,6 +365,7 @@ body .projects {
     grid-template-areas:
         "project-image"
         "project-desc";
+    margin-bottom: var(--big-gap);
 }
 
 .projects .pcont .project .project-image {
@@ -398,6 +393,23 @@ body .projects {
     font-size: 0.9rem;
     color: var(--black);
     font-family: 'Libre Baskerville', serif; 
+}
+
+/* Hobbies section */
+.hobbies {
+    padding: var(--big-gap) 0;
+}
+
+.htitle {
+    padding-right: var(--big-gap);
+}
+
+.htitle .box .about-title {
+    color: var(--primary);
+}
+
+.hphotos {
+    padding-left: var(--big-gap);
 }
 
 /* Footer section */
@@ -443,8 +455,8 @@ body .projects {
 
     .sskills {
         grid-template-areas:
-            "frontend backend"
-            "digitalandmobile design";
+            "backend frontend"
+            "devops digitalandmobile";
         padding: 70px;
         gap: 70px;
     }
@@ -489,23 +501,27 @@ body .projects {
     }
 
     /* Projects section */
-    .projects .projects-content {
+    .projects .container {
         grid-template-rows: auto;
         grid-template-columns: auto 40%;
         grid-template-areas:
-            "pbox ."
-            "pcont ptitle"
             "pcont ptitle";
+        padding: 0 var(--medium-gap);
     }
 
     .pcont {
         align-self: center;
         justify-self: start;
         border-right: 1px solid #d4d4d4;
+        padding: var(--big-gap);
     }
 
     .ptitle {
         padding: var(--big-gap);
+        align-self: start;
+        justify-self: start;
+        position: sticky;
+        top: 0;
     }
 
     /* Footer section */

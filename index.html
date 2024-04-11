@@ -67,10 +67,11 @@
                 <div class="hero-content d-flex">
                     <div class="d-flex flex-column justify-content-center col-12 col-md-7 p-0 pr-md-3">
                         <h1 class="hero-title w-100 title">
-                            Hi there, my name is Alessio.
+                            Hi there, my name is <span class="font-baskerville font-italic">Alessio</span>.
                             <br>
-                            I'm a <span class="text-muted strike">Front End</span> Fullstack <span
-                                class="text-primary">Developer</span>.
+                            I'm a 
+                            <!-- <span class="text-muted strike">Front End</span> Fullstack -->
+                            <span class="text-primary">Developer</span>.
                         </h1>
                         <div class="hero-text mt-3">
                             <p class="text-muted col-12 p-0">
@@ -83,13 +84,13 @@
                         </div>
                     </div>
                     <div class="hero-photo col-0 col-md-5 p-0">
-                        <img src="https://placeimg.com/480/640/people" alt="" class="project-image img-fluid shadow-lg">
+                        <img src="https://picsum.photos/480/640" alt="" class="project-image img-fluid shadow-lg">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="about bg-primary" id="about">
+        <section class="about bg-primary d-flex justify-content-center align-items-center" id="about">
             <div class="container">
                 <div class="col-12 d-flex flex-column p-0 pr-5">
                     <div class="box">
@@ -99,13 +100,21 @@
                         <h2 class="title about-title">
                             Ab
                             <br>
-                            <span>out.</span>
+                            out.
                         </h2>
                     </div>
 
+                    <h3>
+                        Not <span class="font-baskerville font-italic">just</span> a programmer<span class="text-black">.</span>
+                    </h3>
+
                     <p id="about-text" class="mb-0">
-                        Born In Switzerland, I'm now based in Tourin.<br>
-                        I studied as a Web & Mobile App Developer in ITS-ICT Piemonte (IT).
+                        Born In Switzerland, I'm now based in Turin.<br>
+                        I studied as a Web & Mobile App Developer in ITS-ICT Piemonte (IT).<br>
+                        <br>
+                        My work experience left me a lot of notions in different branches.<br>
+                        I worked to an insurance portal and I'm currently working to build an application used by banks.<br>
+                        <br>
                     </p>
                 </div>
             </div>
@@ -144,7 +153,8 @@
                         </figure>
                         <h3 class="title mb-2">Front End</h3>
                         <p class="text-muted">
-                            JavaScript (+ES6)<br>
+                            Angular 8+<br>
+                            TypeScript<br>
                             JQuery<br>
                             Bootstrap<br>
                             Node Js
@@ -156,10 +166,10 @@
                         </figure>
                         <h3 class="title mb-2">Back End</h3>
                         <p class="text-muted">
-                            Java<br>
-                            Spring<br>
-                            JSP<br>
-                            MySQL
+                            Java - Spring, Quarkus<br>
+                            SQL - PostgreSql, MySQL<br>
+                            Python<br>
+                            C/C++
                         </p>
                     </div>
                     <div class="skill p-0" id="digitalandmobile">
@@ -174,14 +184,17 @@
                             Android Apps<br>
                         </p>
                     </div>
-                    <div class="skill p-0" id="design">
+                    <div class="skill p-0" id="devops">
                         <figure class="w-100 d-flex justify-content-start">
                             <img src="./res/icons/Line_white.svg" alt="" class="icon">
                         </figure>
-                        <h3 class="title mb-2">Design</h3>
+                        <h3 class="title mb-2">Dev Ops</h3>
                         <p class="text-muted">
-                            Web Design<br>
-                            UI & UX
+                            Git - GitHub and GitLab<br>
+                            CI/CD pipelines<br>
+                            Docker and Docker-compose<br>
+                            Docker registries<br>
+                            Windows and Ubuntu Server<br>
                         </p>
                     </div>
                 </div>
@@ -190,30 +203,29 @@
 
         </section>
 
-        <!-- <section class="projects" id="projects">
-            <div class="projects-content container">
-                <div class="box pbox">
-                    <figure class="w-100 d-flex justify-content-start">
-                        <img alt="" class="icon">
-                    </figure>
-                    <h2 class="title about-title">
-                        Proj
-                        <br>
-                        ects.
-                    </h2>
-                </div>
+        <section class="projects d-flex justify-content-center" id="projects">
+            <div class="container">
                 <div class="ptitle d-flex flex-column">
-                    <h3 class="w-100">Some of my <span class="italic">works</span><span class="text-primary">.</span></h3>
+                    <div class="box">
+                        <figure class="w-100 d-flex justify-content-start">
+                            <img src="./res/icons/Line_black.svg" alt="" class="icon">
+                        </figure>
+                        <h2 class="title about-title">
+                            Proj
+                            <br>
+                            ects.
+                        </h2>
+                    </div>
+                    <h3 class="w-100">Some of my <span class="font-baskerville font-italic">works</span><span class="text-primary">.</span></h3>
                     <p class="skills-text w-100">
-                        Here there are some of my works. Want to see more? <a class="mail-link"
+                        Here there are some of my projects. Want to see more? <a class="mail-link"
                             href="mailto:alessio.bollo96@gmail.com">Email me</a>.
                     </p>
                 </div>
 
-                <div class="pcont container d-flex flex-wrap">
-
-                    <div class="project col-12 p-0 py-2 pr-lg-5 pt-lg-5">
-                        <img src="https://placeimg.com/640/480/any" alt="" class="project-image img-fluid shadow-lg">
+                <div class="pcont d-flex flex-wrap">
+                    <div class="project col-12 p-0">
+                        <img src="https://picsum.photos/640/480" alt="" class="project-image img-fluid shadow-lg">
                         <div class="project-desc">
                             <h4 class="project-title">
                                 CMR Torino <br>
@@ -222,9 +234,8 @@
                             <a href="#" class="project-link">See the project</a>
                         </div>
                     </div>
-
-                    <div class="project col-12 p-0 py-2 mt-5 pr-lg-5 py-lg-5">
-                        <img src="https://placeimg.com/640/480/any" alt="" class="project-image img-fluid shadow-lg">
+                    <div class="project col-12 p-0">
+                        <img src="https://picsum.photos/640/480" alt="" class="project-image img-fluid shadow-lg">
                         <div class="project-desc">
                             <h4 class="project-title">
                                 Twenty One Pilots <br>
@@ -237,7 +248,45 @@
                 </div>
 
             </div>
-        </section> -->
+        </section>
+
+        <section class="hobbies d-flex justify-content-center align-items-center" id="hobbies">
+            <div class="container">
+                <div class="htitle d-flex flex-column flex-md-row">
+                
+                    <div class="htitle d-flex flex-column justify-content-center p-0 col-12 col-md-5">
+                        <div class="box">
+                            <figure class="w-100 d-flex justify-content-start">
+                                <img src="./res/icons/Line_purple.svg" alt="" class="icon">
+                            </figure>
+                            <h2 class="title about-title">
+                                Hob
+                                <br>
+                                bies.
+                            </h2>
+                        </div>
+                    
+                        <h3>
+                            Some of the things
+                            <br>
+                            I <span class="font-baskerville font-italic">like to do</span>
+                            <br>
+                            on my free time<span class="text-primary">.</span>
+                        </h3>
+                    
+                        <p>
+                            Padel with friends and colleagues<br>
+                            Board games and party games weekends<br>
+                            Personal home server and custom app development
+                        </p>
+                    </div>
+
+                    <div class="hphotos col-12 col-md-7">
+                        <img src="https://picsum.photos/640/480" alt="" class="project-image img-fluid shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <footer class="footer">
             <div class="container">
@@ -246,9 +295,8 @@
                 <a class="mail-link" href="mailto:alessio.bollo96@gmail.com">alessio.bollo96@gmail.com</a>
                 <div class="w-100 py-5">
                     <h5 class="text-muted col-12 p-0 m-0">
-                        I'm a web & mobile app developer.<br>I can help you solving problems, create projects and
-                        mantain
-                        them.
+                        I'm a web & mobile app developer.
+                        <br>I can help you solving problems, create projects and maintain them.
                     </h5>
                 </div>
 
@@ -306,7 +354,7 @@
                     </div>
                 </div>
 
-                <h5 class="text-muted mb-0">Copyright<i class="far fa-copyright"></i> Alessio Bollo 2020</h5>
+                <h5 class="text-muted mb-0">Copyright<i class="far fa-copyright"></i> Alessio Bollo 2024</h5>
 
             </div>
         </footer>
